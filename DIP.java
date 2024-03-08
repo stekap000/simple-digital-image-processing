@@ -1239,53 +1239,7 @@ public class DIP{
 	}
 	
 	public static void main(String[] args){
-		// SOMETIMES THERE ARE NOTICEABLE ERRORS EVEN THOUGH THE PROCEDURES ARE RIGHT
-		// THIS IS BECAUSE int IS USED IN PIXEL CLASS INSTEAD OF FLOAT
 		
-		DIP dip = new DIP();
-		/*dip.loadImage(new File("images/xxx.tif"));
-		dip.plotImageHistogram(new File("images/aaa_histR.png"), DIP.RED_CHANNEL, 40.0f);
-		float[] customHist = dip.getCustomHistogramPiecewiseLinear(1000, 0, 0, 200, 200, 255, 1000);
-		dip.grayscale();
-		dip.shift();
-		dip.histogramEqualization(DIP.RED_CHANNEL);
-		dip.shift();
-		dip.histogramEqualization(DIP.GREEN_CHANNEL);
-		dip.shift();
-		dip.histogramEqualization(DIP.BLUE_CHANNEL);
-		dip.shift();
-		
-		dip.plotImageHistogram(new File("images/aaa_histR_after.png"), DIP.RED_CHANNEL, 40.0f);
-		dip.saveOriginalImage("images/aaa");*/
-		
-		
-		/*dip.loadImage(new File("images/pool.jpg"));
-		dip.grayscale();
-		dip.shift();
-		dip.histogramEqualization(DIP.RED_CHANNEL);
-		dip.shift();
-		dip.histogramEqualization(DIP.GREEN_CHANNEL);
-		dip.shift();
-		dip.histogramEqualization(DIP.BLUE_CHANNEL);
-		dip.shift();
-		dip.saveOriginalImage("images/aaa");*/
-		
-		/*dip.loadImage(new File("images/dipxe.tif"));
-		dip.highboostFilter(7, 1.0f);
-		dip.saveSupportImage("images/XXXX_sharp");*/
-		
-		/*dip.loadImage(new File("images/moon.tif"));
-		dip.laplacianBasic();
-		dip.saveSupportImage("images/XXXX");*/
-		
-		dip.loadImage(new File("images/tesla.jpg"));
-		dip.median(RED_CHANNEL, 9);
-		dip.shift();
-		dip.median(GREEN_CHANNEL, 9);
-		dip.shift();
-		dip.median(BLUE_CHANNEL, 9);
-		dip.shift();
-		dip.saveOriginalImage("images/XXXX");
 		
 	}
 }
